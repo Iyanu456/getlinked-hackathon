@@ -1,95 +1,69 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-
+import Navigation from "./components/Navigation";
+import "./registration-form.css";
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+	return (
+		<div className="main">
+			<Navigation />
+			<div className="reg-form-grp">
+				<section>
+					<div>
+						<h2 className="mb-2 logo"><b><span style={{color: "#d434ff", dropShadow: "0 4px 6px rgba(0, 0, 0, 0.4)", fontSize: "1.2em"}}>Get in touch</span></b></h2>
+						<p>
+							Contact <br />
+							Information
+							<br /><br />
+							27, Alara Street <br />
+							Yaba 100012 <br /> Lagos State
+							<br />
+							<br />
+							Call Us: 07067981819
+							<br />
+							<br />
+							we are open from Monday-Friday
+							<br />
+							08:00am - 05:00pm
+						</p>
+					</div>
+				</section>
+				<section>
+					<div className="reg-form">
+						<form>
+							<h4><b><span style={{color: "#d434ff"}}>Questions or need assistance?<br/>Let us know about it!</span></b></h4>
+					
+							<div>
+								<input
+									type="text"
+									placeholder="First Name"
+									style={{
+										backgroundColor: "transparent",
+										color: "white",
+									}}></input>
+							</div>
+							<div>
+								<input
+									type="text"
+									placeholder="Mail"
+									style={{
+										backgroundColor: "transparent",
+										color: "white",
+									}}></input>
+							</div>
+              <div>
+								<textarea
+								rows="4"
+								cols="35"
+									placeholder="Mail"
+									style={{
+										backgroundColor: "transparent",
+										color: "white",
+									}}></textarea>
+							</div>
+							<div className="reg-submit"><button type="submit" className="btn-gradient">Submit</button></div>
+							
+						</form>
+					</div>
+				</section>
+			</div>
+		</div>
+	);
 }

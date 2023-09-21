@@ -1,0 +1,46 @@
+.reg-form-grp {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    padding-top: 1.4em;
+}
+
+.reg-form-grp > section {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.reg-form > form {
+    width: 100%;
+    padding: 3em;
+    background: rgba(255, 255, 255, 0.059);
+    backdrop-filter: blur(10px); 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*background-color: rgba(164, 125, 212, 0.1);*/
+    /*box-shadow: rgba(235, 235, 235, 0.1) -2px 2px 2px;*/
+}
+
+.reg-form > form > div > input {
+    width: 100%;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 0.6em 1em;
+	border: 1px solid white;
+    border-radius: 5px;
+    
+}
+.reg-form > form > div > textarea {
+    resize: none;
+    width: 100%;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 0.6em 1em;
+	border: 1px solid white;
+    border-radius: 5px;
+}
+
+.reg-submit {
+    padding-top: 0.5em;
+    display: grid;
+    place-items: center;
+}
