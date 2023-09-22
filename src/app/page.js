@@ -3,8 +3,10 @@ import Image from "next/image";
 import Link from 'next/link';
 import "./main.css";
 import Title from "./hackathon-assets/Title.svg";
+import Caption from './hackathon-assets/caption.svg';
 import TitleMobile from "./hackathon-assets/Title-mobile.svg";
 import VrImage from "./hackathon-assets/man-wearing-vr-googles.png";
+import Star from './hackathon-assets/icons/star.svg';
 export default function Home() {
 	return (
 		<div className="main-container">
@@ -15,14 +17,12 @@ export default function Home() {
 					paddingTop: "1.5em",
 					borderTop: "1px solid rgba(124, 124, 124, 0.346)",
 				}}>
-				<h4>
-					<b>
-						<i>Igniting a Revolution in HR Innovation</i>
-					</b>
-				</h4>
+				<Image src={Caption} alt="caption" />
 			</div>
+			<Image src={Star} id="star-1" alt="starr" />
 			<div className="hero-section">
 				<section>
+					
 					<Image className="web" src={Title} alt="Title" />
 					<Image className="mobile" src={TitleMobile} alt="Title" />
 					<p>
