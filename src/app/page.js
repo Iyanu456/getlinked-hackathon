@@ -8,6 +8,7 @@ import TitleMobile from "./hackathon-assets/Title-mobile.svg";
 import VrImage from "./hackathon-assets/man-wearing-vr-googles.svg";
 import Star from "./hackathon-assets/icons/star.svg";
 import Idea from "./hackathon-assets/The-big-idea.svg";
+import Girl from "./hackathon-assets/girl-sitting.svg"
 export default function Home() {
 	return (
 		<div className="main-container">
@@ -54,9 +55,27 @@ export default function Home() {
 					</h4>
 					<p className="content">
 						{
+							"Our tech hackathon is a melting pot of visionaries, and its purpose is as clear as day: to shape the future. Whether you're a coding genius, a design maverick, or a concept wizard, you'll have the chance to transform your ideas into reality. Solving real-world problems, pushing the boundaries of technology, and creating solutions that can change the world,that's what we're all about!"
+						}
+					</p>
+				</div>
+			</div>
+			<div className="hackathon-grp odd">
+				<div>
+					<h4 className="heading">
+						Rules and <br/>
+						<span style={{ color: "#d434ff" }}>
+							Guidelines
+						</span>
+					</h4>
+					<p className="content">
+						{
 							"Our tech hackathon is a melting pot of visionaries, and its purpose is as clear as day: to shape the future. Whether you're a coding genius, a design maverick, or a concept wizard, you'll have the chance to transform your ideas into reality. Solving real-world problems, pushing the boundaries of technology, and creating solutions that can change the world, that's what we're all about!"
 						}
 					</p>
+				</div>
+				<div>
+					<Image src={Girl} alt="Idea" />
 				</div>
 			</div>
 		</div>
