@@ -58,7 +58,7 @@
     .hero-section > section:first-child {
         display: grid;
         place-items: center;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
     
     .caption > img {
@@ -83,6 +83,10 @@
         margin-left: 8em;
         margin-bottom: -0.8em;
         position: relative;
+    }
+    .hero-section > section:last-child > img {
+        max-width: 100%;
+        height: fit-content;
     }
 }
 

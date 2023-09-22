@@ -5,7 +5,7 @@ import "./main.css";
 import Title from "./hackathon-assets/Title.svg";
 import Caption from './hackathon-assets/caption.svg';
 import TitleMobile from "./hackathon-assets/Title-mobile.svg";
-import VrImage from "./hackathon-assets/man-wearing-vr-googles.png";
+import VrImage from "./hackathon-assets/man-wearing-vr-googles.svg";
 import Star from './hackathon-assets/icons/star.svg';
 export default function Home() {
 	return (
