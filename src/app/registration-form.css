@@ -1,7 +1,7 @@
 .reg-form-grp {
     display: grid;
     grid-template-columns: 45% 55%;
-    padding-top: 1.4em;
+    padding-top: 1em;
 }
 
 .reg-form-grp > section {
@@ -11,7 +11,7 @@
 }
 .reg-form > form {
     width: 100%;
-    padding: 3em;
+    padding: 2em 3em;
     background: rgba(255, 255, 255, 0.059);
     backdrop-filter: blur(10px); 
     border-radius: 10px;
@@ -43,4 +43,26 @@
     padding-top: 0.5em;
     display: grid;
     place-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .reg-form-grp > section:first-child {
+        display: none;
+    }
+    .reg-form-grp {
+        display: block;
+        height: 100%;
+        border: 0;
+    }
+
+    .reg-form > form {
+        width: 100%;
+        padding: 2em;
+        background: none;
+        border: none;
+        backdrop-filter: none; 
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
 }

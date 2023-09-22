@@ -1,67 +1,27 @@
 import Navigation from "./components/Navigation";
-import "./registration-form.css";
+import Image from "next/image";
+import "./main.css";
+import Title from './hackathon-assets/Title.svg'
+import TitleMobile from './hackathon-assets/Title-mobile.svg'
+import VrImage from './hackathon-assets/man-wearing-vr-googles.png' 
 export default function Home() {
 	return (
-		<div className="main">
+		<div className="main-container">
 			<Navigation />
-			<div className="reg-form-grp">
+			<div className="caption">
+				<h4><b><i>Igniting  a Revolution in HR Innovation</i></b></h4>
+			</div>
+			<div className="hero-section">
+
 				<section>
-					<div>
-						<h2 className="mb-2 logo"><b><span style={{color: "#d434ff", dropShadow: "0 4px 6px rgba(0, 0, 0, 0.4)", fontSize: "1.2em"}}>Get in touch</span></b></h2>
-						<p>
-							Contact <br />
-							Information
-							<br /><br />
-							27, Alara Street <br />
-							Yaba 100012 <br /> Lagos State
-							<br />
-							<br />
-							Call Us: 07067981819
-							<br />
-							<br />
-							we are open from Monday-Friday
-							<br />
-							08:00am - 05:00pm
-						</p>
-					</div>
+					<Image className="web" src={Title} alt="Title"/>
+					<Image className="mobile" src={TitleMobile} alt="Title"/>
+					<p>Participate in getlinked tech Hackathon 2023 stand <br />a chance to win a Big prize </p>
+					<button className="btn-gradient">Register</button>
 				</section>
+
 				<section>
-					<div className="reg-form">
-						<form>
-							<h4><b><span style={{color: "#d434ff"}}>Questions or need assistance?<br/>Let us know about it!</span></b></h4>
-					
-							<div>
-								<input
-									type="text"
-									placeholder="First Name"
-									style={{
-										backgroundColor: "transparent",
-										color: "white",
-									}}></input>
-							</div>
-							<div>
-								<input
-									type="text"
-									placeholder="Mail"
-									style={{
-										backgroundColor: "transparent",
-										color: "white",
-									}}></input>
-							</div>
-              <div>
-								<textarea
-								rows="4"
-								cols="35"
-									placeholder="Mail"
-									style={{
-										backgroundColor: "transparent",
-										color: "white",
-									}}></textarea>
-							</div>
-							<div className="reg-submit"><button type="submit" className="btn-gradient">Submit</button></div>
-							
-						</form>
-					</div>
+					<Image src={VrImage} alt="VrImage"/>
 				</section>
 			</div>
 		</div>
