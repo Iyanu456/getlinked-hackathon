@@ -25,17 +25,19 @@ export default function Home() {
 			<Image src={Star} id="star-1" alt="starr" />
 			<div className="hero-section">
 				<section>
-					<Image className="web" src={Title} alt="Title" />
-					<Image className="mobile" src={TitleMobile} alt="Title" />
-					<p>
-						Participate in getlinked tech Hackathon 2023 stand a
-						chance to win a Big prize
-					</p>
-					<Link href="/contact-page">
-						<button className="btn-gradient">Register</button>
-					</Link>
-					<div className="counter">
-						00<span>H</span> 00<span>M</span> 00<span>S</span>
+					<div>
+						<Image className="web" src={Title} alt="Title" />
+						<Image className="mobile" src={TitleMobile} alt="Title" />
+						<p>
+							Participate in getlinked tech Hackathon 2023 stand a
+							chance to win a Big prize
+						</p>
+						<Link href="/contact-page">
+							<button className="btn-gradient">Register</button>
+						</Link>
+						<div className="counter">
+							00<span>H</span> 00<span>M</span> 00<span>S</span>
+						</div>
 					</div>
 				</section>
 

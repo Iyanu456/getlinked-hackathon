@@ -7,9 +7,9 @@
 
 .caption > img {
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 2em;
     height: fit-content;
-    width: 40%
+    width: 38%
 }
 
 #star-1 {
@@ -22,19 +22,30 @@
 .hero-section {
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 1em 3em 0 3em;
+    padding: 0.2em 0 0 4em;
     border-bottom: 1.5px solid rgba(124, 124, 124, 0.346);
-    margin-bottom: 1em;
 }
 
-.hero-section > section:first-child > img {
+.hero-section > section:first-child {
+    display: grid;
+}
+.hero-section > section:first-child > div > img {
     margin-top: 0;
     width: 90%;
     height: fit-content;
 }
-.hero-section > section:first-child > p {
+.hero-section > section:first-child > div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.hero-section > section:first-child > div > p {
     max-width: 70%;
     padding-bottom: 0.6em;
+}
+.hero-section > section:last-child > img {
+    margin-top: 0;
+    width: 95%;
+    height: fit-content;
 }
 
 .counter {
@@ -50,8 +61,9 @@
 .hackathon-grp {
     display: flex;
     width: 100%;
+    padding: 3em 3em;
+	border-bottom: 2px solid rgba(124, 124, 124, 0.346);
 
-    padding: 2em 3em;
 }
 
 .hackathon-grp > div {
@@ -86,7 +98,7 @@
         grid-template-columns: 100%;
         place-items: center;
     }
-    .hero-section > section:first-child {
+    .hero-section > section:first-child > div {
         display: grid;
         place-items: center;
         margin-bottom: 1em;
@@ -98,13 +110,13 @@
         height: fit-content;
         width: 100%
     }
-    .hero-section > section:first-child > p {
+    .hero-section > section:first-child > div > p {
         font-size: 0.9em;
         max-width: 100%;
         margin-top: 1em;
         text-align: center;
     }
-    .hero-section > section:first-child > img {
+    .hero-section > section:first-child > div > img {
         width: 100%;
     }
     #star-1 {
@@ -123,7 +135,6 @@
         display: flex;
         flex-wrap: wrap;
         padding: 2em 2em;
-        border-bottom: 1.5px solid rgba(124, 124, 124, 0.346);
     }
 
     .odd {
@@ -143,7 +154,7 @@
         width: 100%;
     }
     .hackathon-grp > div > .heading {
-        font-size: 1.4em;
+        font-size: 1.3em;
         text-align: center;
         width: 100%;
         padding-top: 0.5em;
