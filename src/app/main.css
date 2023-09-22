@@ -55,14 +55,18 @@
     
     .caption > h4 {
         text-align: center;
-        font-size: 1.08em;
+        font-size: 1em;
         margin-top: 1em;
         margin-left: auto;
         margin-right: auto;
     }
     .hero-section > section:first-child > p {
+        max-width: 95%;
         margin-top: 1em;
         text-align: center;
+    }
+    .hero-section > section:first-child > img {
+        width: 100%;
     }
 }
 
