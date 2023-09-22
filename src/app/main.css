@@ -85,7 +85,6 @@
         position: relative;
     }
     .hero-section > section:last-child > img {
-        max-width: 100%;
         height: fit-content;
     }
 }
