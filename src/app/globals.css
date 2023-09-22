@@ -40,6 +40,8 @@ html,
 @font-face {
 	font-family: 'Clash Display'; /* Choose a name for your font */
 	src: url('./hackathon-assets/fonts/ClashDisplay_Complete/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Regular.otf') format('woff2');
+	src: url('./hackathon-assets/fonts/ClashDisplay_Complete/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Bold.otf') format('woff2');
+	src: url('./hackathon-assets/fonts/ClashDisplay_Complete/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Semibold.otf') format('woff2');
 	font-weight: normal; /* Font weight (normal, bold, etc.) */
 	font-style: normal; /* Font style (normal, italic, etc.) */
   }
@@ -119,7 +121,7 @@ header > h3 {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 920px) {
 	header {
 		padding: 2em 2em;
 	}

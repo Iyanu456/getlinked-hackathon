@@ -29,7 +29,7 @@
 
 .hero-section > section:first-child > img {
     margin-top: 0;
-    width: 93%;
+    width: 90%;
     height: fit-content;
 }
 .hero-section > section:first-child > p {
@@ -47,8 +47,32 @@
     font-size: 0.3em;
 }
 
+.hackathon-grp {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+    padding: 2em 3em;
+}
 
-@media screen and (max-width: 900px) {
+.hackathon-grp > div > img {
+    width: 90%;
+    height: fit-content;
+}
+.hackathon-grp > div > .content {
+    line-height: 2em;
+    max-width: 80%;
+}
+.hackathon-grp > div > .heading {
+    max-width: 70%;
+    font-size: 2em;
+    font-family: 'Clash Display';
+    font-weight: 600px;
+    word-spacing: 5px;
+    padding-bottom: 0.3em;
+}
+
+
+@media screen and (max-width: 920px) {
     .hero-section {
         display: grid;
         padding: 1em 2.8em 0 2.8em;
@@ -86,6 +110,29 @@
     }
     .hero-section > section:last-child > img {
         height: fit-content;
+    }
+
+    .hackathon-grp {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 2em 2em;
+    }
+
+    .hackathon-grp > div {
+        display: grid;
+        place-items: center;
+    }
+
+    .hackathon-grp > div > .content {
+        text-align: center;
+        max-width: 90%;
+    }
+    .hackathon-grp > div > .heading {
+        font-size: 1.4em;
+        text-align: center;
+        max-width: 95%;
+        padding-top: 0.5em;
+    
     }
 }
 
