@@ -63,10 +63,7 @@ export default function Home() {
 			<div className="hackathon-grp odd">
 				<div>
 					<h4 className="heading">
-						Rules and <br/>
-						<span style={{ color: "#d434ff" }}>
-							Guidelines
-						</span>
+						Rules and <span style={{ color: "#d434ff" }}> Guidelines</span>
 					</h4>
 					<p className="content">
 						{

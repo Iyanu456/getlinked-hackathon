@@ -132,16 +132,17 @@
     .hackathon-grp > div {
         display: grid;
         place-items: center;
+        width: 100%;
     }
 
     .hackathon-grp > div > .content {
         text-align: center;
-        max-width: 100%;
+        width: 100%;
     }
     .hackathon-grp > div > .heading {
         font-size: 1.4em;
         text-align: center;
-        max-width: 100%;
+        width: 100%;
         padding-top: 0.5em;
     
     }
