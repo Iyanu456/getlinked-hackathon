@@ -123,6 +123,7 @@
         display: flex;
         flex-wrap: wrap;
         padding: 2em 2em;
+        border-bottom: 1px solid rgba(124, 124, 124, 0.346);
     }
 
     .odd {
@@ -132,6 +133,8 @@
     .hackathon-grp > div {
         display: grid;
         place-items: center;
+        padding-left: 1em;
+        padding-right: 1em;
         width: 100%;
     }
 
