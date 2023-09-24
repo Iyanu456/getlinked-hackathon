@@ -58,8 +58,9 @@ export default function Home() {
 			</div>
 
 			{data.map((items) => (
-				<Info
-					id={items.id}
+				<Info 
+				        key={items.id}
+                                        id={items.id}
 					src={items.image.src}
 					alt={items.image.alt}
 					normalHeading={items.heading.normal}
